@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <landing>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Nav from './components/Sections/Navigation/Main.vue';
+import Landing from './components/Sections/Landing/Main.vue'
+// import Members from './components/Sections/Members/Main.vue';
+// import Articles from './components/Sections/Articles/Main.vue';
+// import Contact from './components/Sections/Contact/Main.vue'
+// import Footer from './components/Footer/Main.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // Nav,
+  // Members,
+  Landing,
+  // Articles,
+  // Contact,
+  // Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 </style>
