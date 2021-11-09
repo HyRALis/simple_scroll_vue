@@ -1,6 +1,11 @@
 <template>
     <div>
-
+        <h4>{{ title }}</h4>
+        <ul>
+            <li v-for="(item, index) in list" :key="index">
+                <a :href="item.url">{{ item.label }}</a>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -18,13 +23,16 @@
                 required: true,
                 description: 'Prperty that sends the list of elements with all its properties'
             }
-        },
-        methods: {
-            
         }
     }
 </script>
 
 <style lang="scss" scoped>
-
+div {
+    display: flex;
+    flex-direction: column;
+    h4 {
+        margin-top: 0;
+    }
+}
 </style>

@@ -1,10 +1,10 @@
 <template>
-    <div class="header-main">
+    <section class="header-main">
         <div class="header-content">
             <button class="header-cta" @click="clickHandler">CONTACT</button>
             <p class="descrition">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header-main {
     background-image: url('../../../assets/images/Intersection 2.png');
     align-content: center;

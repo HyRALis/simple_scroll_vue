@@ -111,7 +111,23 @@ export const articles = [
 
 export const members = [
     {
-        name: 
-        Sur
-    }
+        name: 'Petar',
+        surname: 'Trajanoski',
+        position: 'Frontend developer' 
+    },
+    {
+        name: 'John',
+        surname: 'Doe',
+        position: 'Backend developer' 
+    },
+    {
+        name: 'Someone',
+        surname: 'Else',
+        position: 'Fullstack developer' 
+    },
+    {
+        name: 'Darko',
+        surname: 'Mitrevski',
+        position: 'Project manager' 
+    },
 ]

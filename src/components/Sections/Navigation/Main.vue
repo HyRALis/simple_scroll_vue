@@ -6,7 +6,20 @@
 
 <script>
     export default {
-        
+        name: 'Navigation Bar',
+        props: {
+            sections: {
+                type: Array,
+                required: true,
+                
+            }
+        },
+        data() {
+            return {
+
+            }
+        },
+
     }
 </script>
 
