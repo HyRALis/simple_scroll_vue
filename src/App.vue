@@ -1,27 +1,28 @@
 <template>
-  <landing/>
-  <footer-component/>
+    <landing />
+    <articles />
+    <footer-component />
 </template>
 
 <script>
 // import Nav from './components/Sections/Navigation/Main.vue';
-import Landing from './components/Sections/Landing/Main.vue'
+import Landing from './components/Sections/Landing/Main.vue';
 // import Members from './components/Sections/Members/Main.vue';
-// import Articles from './components/Sections/Articles/Main.vue';
+import Articles from './components/Sections/Articles/Main.vue';
 // import Contact from './components/Sections/Contact/Main.vue'
 import FooterComponent from './components/Footer/Main.vue';
 
 export default {
-  name: 'App',
-  components: {
-    Landing,
-    FooterComponent
-    // Nav,
-  // Members,
-  // Articles,
-  // Contact,
-  }
-}
+    name: 'App',
+    components: {
+        Landing,
+        FooterComponent,
+        // Nav,
+        // Members,
+        Articles
+        // Contact,
+    }
+};
 </script>
 
 <style>

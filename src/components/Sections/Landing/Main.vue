@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-main {
-    background-image: url('../../../assets/images/Intersection 2.png');
+    background-image: url('../../../assets/images/Intersection-2.png');
     align-content: center;
     display: flex;
     flex-direction: column;

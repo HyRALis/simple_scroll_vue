@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <img src="../../assets/images/Valtech-Logo-black.png" alt="Valtech logo">
+        <img src="@/assets/images/Valtech-Logo-black.png" alt="Valtech logo">
         <list v-for="(list, index) in lists" :key="index" :title="titles[index]" :list="list" />
     </footer>
 </template>
