@@ -5,13 +5,13 @@
             <h3 class="title">{{ article.title }}</h3>
             <p>{{ restrictString(300, article.content) }}</p>
 
-            <button>Read more</button>
+            <button class="btn--primary">Read more</button>
         </div>
     </article>
 </template>
 
 <script>
-import { getBaseUrl } from '../../../modules/utils'
+import { getBaseUrl } from '../../../modules/utils';
 export default {
     name: 'Article Card',
     props: {
@@ -58,15 +58,9 @@ article {
         }
     }
     button {
-        background: #000000 0% 0% no-repeat padding-box;
         position: absolute;
         bottom: 35px;
         right: 35px;
-        border-radius: 10px;
-        color: #ffffff;
-        opacity: 1;
-        padding: 12px 40px;
-        text-align: center;
     }
 }
 </style>
