@@ -1,15 +1,37 @@
+export const cardColors = [
+    'Red',
+    'Pink',
+    'Purple',
+    'Deep-Purple',
+    'Indigo',
+    'Blue',
+    'Light-Blue',
+    'Cyan',
+    'Teal',
+    'Green',
+    'Light-Green',
+    'Lime',
+    'Yellow',
+    'Amber',
+    'Orange'
+];
+
 export const sections = [
     {
-        label: 'Section One'
+        label: 'Section One',
+        href: '#landing'
     },
     {
-        label: 'Section Two'
+        label: 'Section Two',
+        href: '#members'
     },
     {
-        label: 'Section Three'
+        label: 'Section Three',
+        href: '#articles'
     },
     {
-        label: 'Section Four'
+        label: 'Section Four',
+        href: '#contact'
     }
 ];
 
@@ -114,69 +136,99 @@ export const users = [
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=15',
         firstname: 'Deborah',
         lastname: 'Miller',
-        age: '25'
+        age: '25',
+        occupation: 'Frontend Developer',
+        description: "Pure heathed, loyal, honest, hardworker",
+        skills: ['js', 'php', 'python']
     },
     {
         id: 2,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=18',
         firstname: 'Johannes',
         lastname: 'Myles',
-        age: '34'
+        occupation: 'Lead Developer',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '34',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 3,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=345',
         firstname: 'Britta',
         lastname: 'Rhudinbergh',
-        age: '43'
+        occupation: 'Backend Developer',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '43',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 4,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=44',
         firstname: 'Olivia',
         lastname: 'Brown',
-        age: '44'
+        occupation: 'Tech Lead',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '44',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 5,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=657',
         firstname: 'Daniel',
         lastname: 'Rudin',
-        age: '32'
+        occupation: 'Manager',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '32',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 6,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=89',
         firstname: 'Teressa',
         lastname: 'Sandhurst',
-        age: '35'
+        description: "Pure heathed, loyal, honest, hardworker",
+        occupation: 'CEO',
+        age: '35',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 7,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=877',
         firstname: 'Dina',
         lastname: 'Sokolowski',
-        age: '28'
+        description: "Pure heathed, loyal, honest, hardworker",
+        occupation: 'CTO',
+        age: '28',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 8,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=81',
         firstname: 'André',
         lastname: 'Szillagy',
-        age: '23'
+        occupation: 'Product designer',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '23',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 9,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=33',
         firstname: 'Fabian',
         lastname: 'Stocker',
-        age: '45'
+        occupation: 'Human Resources',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '45',
+        skills: ['js', 'php', 'python']
     },
     {
         id: 10,
         img: 'https://source.unsplash.com/collection/8669816/100x100?sig=21',
         firstname: 'Christian',
         lastname: 'Williams',
-        age: '41'
+        occupation: 'Frontend Developer',
+        description: "Pure heathed, loyal, honest, hardworker",
+        age: '41',
+        skills: ['js', 'php', 'python']
     }
 ];

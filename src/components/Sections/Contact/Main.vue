@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="contact">
         <div class="form--container">
             <text-input
                 id="first__name"
@@ -90,7 +90,6 @@ section {
         margin: auto;
         max-width: 800px;
         padding: 40px 50px;
-        opacity: 0.78;
     }
     .relative {
         position: relative;

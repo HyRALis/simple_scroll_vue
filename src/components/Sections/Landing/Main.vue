@@ -1,5 +1,5 @@
 <template>
-    <section class="header-main">
+    <section id="landing" class="header-main">
         <div class="header-content">
             <button class="header-cta" @click="clickHandler">CONTACT</button>
             <p class="descrition">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
@@ -29,9 +29,8 @@ export default {
     width: 100%;
 }
 .header-content {
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: #ffffffd1;
     height: 250px;
-    opacity: 0.82;
     width: 100%;
     display: flex;
     flex-direction: column;

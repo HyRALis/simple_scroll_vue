@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="articles">
         <div>
             <article-card v-for="(article, index) in articles" :key="index" :article="article" />
         </div>
@@ -22,15 +22,17 @@ export default {
 
 <style lang="scss" scoped>
 section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0;
     width: 100%;
-    padding: 90px;
 }
 div {
-    width: 1360px;
-    margin: auto;
     display: grid;
+    column-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 50px;
+    row-gap: 50px;
 }
 </style>

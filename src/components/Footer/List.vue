@@ -32,7 +32,10 @@ div {
     display: flex;
     flex-direction: column;
     h4 {
-        margin-top: 0;
+        text-align: left;
+        color: #000000;
+        font: normal normal normal 18px/22px;
+        opacity: 1;
     }
 }
 </style>

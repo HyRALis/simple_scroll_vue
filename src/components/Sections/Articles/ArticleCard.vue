@@ -4,7 +4,6 @@
         <div class="content">
             <h3 class="title">{{ article.title }}</h3>
             <p>{{ restrictString(300, article.content) }}</p>
-
             <button class="btn--primary">Read more</button>
         </div>
     </article>
