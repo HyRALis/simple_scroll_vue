@@ -43,6 +43,7 @@ export default {
     }
     textarea {
         background: #ffffff 0% 0% no-repeat padding-box;
+        border: none;
         border-radius: 15px;
         height: 100px;
         margin-top: 10px;
