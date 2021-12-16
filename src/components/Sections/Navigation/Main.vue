@@ -1,36 +1,52 @@
 <template>
     <nav class="navbar">
         <img src="@/assets/images/Valtech-Logo-black@2x.png" alt="Valtech logo" />
-        <ul class="navlinks__container">
-            <li
-                v-for="(section, index) in sections"
-                :class="{ selected: selected === section.href }"
-                :key="index"
-                @click="setSelected(section.href)"
-            >
-                <a v-smooth-scroll :href="section.href"> {{ section.label }} </a>
-            </li>
-        </ul>
-        <div class="search__container">
+        <navbar-links v-if="windowWidth > 978" :sections="sections" />
+        <div v-if="windowWidth > 978" class="search__container">
             <input type="text" placeholder="Type text here" />
             <button>Search</button>
         </div>
+        <button v-if="windowWidth <= 978" class="button__toggle--links" @click="toggleShowList">
+            <i class="fas fa-bars"></i>
+        </button>
+        <keep-alive>
+            <div v-if="windowWidth <= 978 && showList" class="navbar--dropdown" :class="{ show: showList }">
+                <div class="search__container">
+                    <input type="text" placeholder="Type text here" />
+                    <button>Search</button>
+                </div>
+                <navbar-links :sections="sections" />
+            </div>
+        </keep-alive>
     </nav>
 </template>
 
 <script>
 import { sections } from '../../../modules/dummyData';
+import NavbarLinks from './NavbarLinks.vue';
+
 export default {
+    components: { NavbarLinks },
     name: 'Navigation Bar',
     data() {
         return {
             sections: sections,
-            selected: '#landing'
+            selected: '#landing',
+            windowWidth: 1200,
+            showList: false
         };
     },
+    created() {
+        this.windowWidth = document.body.clientWidth;
+
+        let onresize = () => {
+            this.windowWidth = document.body.clientWidth;
+        };
+        window.addEventListener('resize', onresize);
+    },
     methods: {
-        setSelected(href) {
-            this.selected = href;
+        toggleShowList() {
+            this.showList = !this.showList;
         }
     }
 };
@@ -54,49 +70,27 @@ export default {
         height: 56px;
         width: 266px;
     }
-}
 
-.navlinks__container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
+    .button__toggle--links {
+        border: none;
+        padding: 0;
+        background: transparent;
+        color: #000000;
+        font-size: 42px;
+        cursor: pointer;
+    }
 
-    li {
-        align-items: center;
-        display: flex;
-        padding-right: 10px;
-        height: 100%;
-        position: relative;
-
-        &.selected::after {
-            content: '';
-            background: #00d6ff;
-            bottom: 0;
-            left: 50%;
-            height: 5px;
-            position: absolute;
-            transform: translateX(-50%);
-            width: 45px;
-            z-index: 9999999999;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
-
-        a {
-            color: #00c8ff;
-            align-items: center;
+    &--dropdown {
+        display: none;
+        flex-direction: column;
+        &.show {
             display: flex;
-            font-family: 'Neue', Arial, Helvetica, sans-serif;
-            height: 100%;
-            letter-spacing: 0px;
-            text-align: left;
-            text-decoration: none;
         }
     }
 }
 
 .search__container {
+    width: max-content;
     input {
         height: 39px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -116,6 +110,21 @@ export default {
         padding: 0 13px;
         outline: none;
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .navbar {
+        &--dropdown {
+            flex-direction: column;
+            position: absolute;
+            bottom: -242px;
+            right: 0;
+            width: 360px;
+            background: #ffffffd2;
+            padding: 10px;
+            align-items: center;
+        }
     }
 }
 </style>

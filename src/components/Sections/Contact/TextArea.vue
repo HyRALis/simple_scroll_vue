@@ -49,7 +49,7 @@ export default {
         margin-top: 10px;
         opacity: 1;
         padding: 10px;
-        width: calc(100% - 20px);
+        width: 100%;
     }
 }
 </style>

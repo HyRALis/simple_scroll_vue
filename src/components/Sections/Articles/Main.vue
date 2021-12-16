@@ -31,8 +31,16 @@ section {
 div {
     display: grid;
     column-gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0 20px;
     row-gap: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 </style>
