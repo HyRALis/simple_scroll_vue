@@ -1,9 +1,11 @@
 <template>
     <navbar />
-    <landing />
-    <members />
-    <articles />
-    <contact />
+    <main>
+        <landing />
+        <members />
+        <articles />
+        <contact />
+    </main>
     <footer-component />
 </template>
 
