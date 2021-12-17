@@ -95,11 +95,12 @@ export default {
 
 .search__container {
     width: max-content;
+    height: 39px;
     input {
-        height: 39px;
         background: #ffffff 0% 0% no-repeat padding-box;
         border: 1px solid #195757;
         border-radius: 15px 0px 0px 15px;
+        height: 100%;
         padding-left: 15px;
         outline: none;
         opacity: 1;
@@ -107,10 +108,10 @@ export default {
 
     button {
         background: #00e0ff 0% 0% no-repeat padding-box;
-        border: 1px solid transparent;
+        border: 1px solid #00e0ff;
         cursor: pointer;
         font-size: 14px;
-        height: 39px;
+        height: 100%;
         padding: 0 13px;
         outline: none;
         opacity: 1;

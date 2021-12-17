@@ -74,6 +74,7 @@ section {
 
     input {
         border-radius: 15px 0px 0px 15px;
+        padding-left: 25px;
         width: 150px;
     }
 
