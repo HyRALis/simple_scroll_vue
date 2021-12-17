@@ -49,6 +49,7 @@ export default {
         margin-top: 10px;
         opacity: 1;
         padding: 10px;
+        resize: none;
         width: 100%;
     }
 }
