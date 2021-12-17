@@ -34,7 +34,17 @@ div {
     h4 {
         text-align: left;
         color: #000000;
-        font: normal normal normal 18px/22px;
+        font-size: 18px;
+        font-family: 'Neue', Arial, Helvetica, sans-serif;
+        opacity: 1;
+    }
+    a {
+        text-align: left;
+        text-decoration: underline;
+        font-family: 'Neue', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #000000;
         opacity: 1;
     }
 }

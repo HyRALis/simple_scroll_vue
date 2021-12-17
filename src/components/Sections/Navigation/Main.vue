@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar">
+    <header class="navbar" v-click-outside="closeDropdown">
         <img src="@/assets/images/Valtech-Logo-black@2x.png" alt="Valtech logo" />
         <navbar-links v-if="windowWidth > 978" :sections="sections" />
         <div v-if="windowWidth > 978" class="search__container">
@@ -18,7 +18,7 @@
                 <navbar-links :sections="sections" />
             </div>
         </keep-alive>
-    </nav>
+    </header>
 </template>
 
 <script>
@@ -47,6 +47,9 @@ export default {
     methods: {
         toggleShowList() {
             this.showList = !this.showList;
+        },
+        closeDropdown() {
+            this.showList = false;
         }
     }
 };
@@ -83,6 +86,7 @@ export default {
     &--dropdown {
         display: none;
         flex-direction: column;
+        border: 1px solid gray;
         &.show {
             display: flex;
         }

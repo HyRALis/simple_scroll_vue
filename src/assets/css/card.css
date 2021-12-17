@@ -71,7 +71,7 @@
     top: auto;
     bottom: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .material-card.mc-active {
         padding-bottom: 0;
         height: auto;
@@ -237,7 +237,7 @@
 .material-card.mc-active .mc-content {
     padding-top: 5.6em;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .material-card.mc-active .mc-content {
         position: relative;
         margin-right: 16px;
@@ -249,7 +249,7 @@
     opacity: 1;
     filter: alpha(opacity=100);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .material-card.mc-active .mc-description {
         position: relative;
         top: auto;

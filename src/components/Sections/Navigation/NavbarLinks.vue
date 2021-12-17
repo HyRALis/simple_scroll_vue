@@ -1,14 +1,16 @@
 <template>
-    <ul class="navlinks__container">
-        <li
-            v-for="(section, index) in sections"
-            :class="{ selected: selected === section.href }"
-            :key="index"
-            @click="setSelected(section.href)"
-        >
-            <a v-smooth-scroll :href="section.href"> {{ section.label }} </a>
-        </li>
-    </ul>
+    <nav>
+        <ul class="navlinks__container">
+            <li
+                v-for="(section, index) in sections"
+                :class="{ selected: selected === section.href }"
+                :key="index"
+                @click="setSelected(section.href)"
+            >
+                <a v-smooth-scroll :href="section.href"> {{ section.label }} </a>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <script>
@@ -35,6 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+nav {
+    height: 100%;
+}
 .navlinks__container {
     display: flex;
     justify-content: space-evenly;
@@ -76,6 +81,9 @@ export default {
 }
 
 @media screen and (max-width: 978px) {
+    nav {
+        width: 100%;
+    }
     .navlinks__container {
         flex-direction: column;
         width: 100%;
@@ -84,7 +92,7 @@ export default {
             justify-content: center;
             text-align: center;
             height: 45px;
-            
+
             a {
                 width: 100%;
                 justify-content: center;
@@ -103,11 +111,11 @@ export default {
             }
 
             &.selected::before {
-                left: 0;
+                left: -10px;
             }
 
             &.selected::after {
-                left: 100%;
+                left: calc(100% + 5px);
             }
         }
     }

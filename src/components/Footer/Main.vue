@@ -34,4 +34,10 @@ footer {
         list-style: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+}
 </style>

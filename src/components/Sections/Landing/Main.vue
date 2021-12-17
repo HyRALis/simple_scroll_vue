@@ -1,7 +1,7 @@
 <template>
     <section id="landing" class="header-main">
         <div class="header-content">
-            <button class="header-cta" @click="clickHandler">CONTACT</button>
+            <button class="header-cta" @click="sendEmail">CONTACT</button>
             <p class="descrition">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
         </div>
     </section>
@@ -11,8 +11,8 @@
 export default {
     name: 'Header section',
     methods: {
-        clickHandler() {
-            this.$emit('scroll-to', { sectionNo: 4 });
+        sendEmail() {
+            window.location.href = 'mailto:mk.contact@valtech.com';
         }
     }
 };
